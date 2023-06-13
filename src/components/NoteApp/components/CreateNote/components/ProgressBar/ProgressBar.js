@@ -1,6 +1,10 @@
-const ProgressBar = ()=>(
+import './ProgressBar.css'
+
+import { LinearProgress } from '@mui/material'
+
+const ProgressBar = () => (
   <div>
-    ProgressBar
+    <LinearProgress className='char__progress' variant='determinate' value={60} />
   </div>
 )
 

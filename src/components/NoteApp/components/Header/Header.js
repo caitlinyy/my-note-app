@@ -1,6 +1,8 @@
+import "./Header.css"
+
 const Header = () =>(
-  <div>
-    <header>NoteApp</header>
+  <div className="header">
+    <h1 className="notes__title">NoteApp</h1>
   </div>
 )
 export default Header

@@ -1,6 +1,8 @@
+import './NoteSave.css'
+
 const NoteSave =()=>(
   <div>
-    <button>Save</button>
+    <button className='note__save'>Save</button>
   </div>
 )
 

@@ -1,6 +1,10 @@
-const DeleteNote = ()=>(
+import DeleteForeverOutlined from '@mui/icons-material/DeleteForeverOutlined'
+
+import "./DeleteNote.css"
+
+const DeleteNote = () => (
   <div>
-    DeleteNote
+    <DeleteForeverOutlined className="note__delete" aria-hidden='true' />
   </div>
 )
 

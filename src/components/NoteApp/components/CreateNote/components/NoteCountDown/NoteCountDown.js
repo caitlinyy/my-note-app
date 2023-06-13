@@ -1,6 +1,7 @@
+import "./NoteCountDown.css"
 const NoteCountDown = () => (
   <div>
-    100words Left
+    <span className='label'> 100 words Left</span>
   </div>
 )
 

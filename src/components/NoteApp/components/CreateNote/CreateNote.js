@@ -3,13 +3,17 @@ import NoteCountDown from "./components/NoteCountDown"
 import NoteSave from "./components/NoteSave"
 import ProgressBar from "./components/ProgressBar/ProgressBar"
 
+import "../css/note.css"
 
 const CreateNote = () => (
-  <div>
+  <div className="note">
     <NoteInput />
+    <div className="note__footer">
     <NoteCountDown />
-    <ProgressBar />
     <NoteSave />
+    </div>
+    <ProgressBar />
+    
   </div>
 )
 

@@ -1,7 +1,7 @@
 const NoteInput =()=>(
   <div>
-  <input  type="text" placeholder="Please Type Here...">
-  </input>
+  <textarea cols="10" rows="5" value="" placeholder="Type..." maxLength="100">
+    </textarea>
 </div>
 )
 

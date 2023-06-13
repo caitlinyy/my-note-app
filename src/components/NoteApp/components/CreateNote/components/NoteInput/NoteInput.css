@@ -1,0 +1,16 @@
+textarea {
+  white-space: pre-wrap;
+  background: transparent;
+  border: none;
+  color: #fff;
+  resize: none;
+  font-size: 18px;
+}
+
+textarea:focus {
+  outline: none;
+}
+
+textarea::placeholder {
+  color: #fff;
+}

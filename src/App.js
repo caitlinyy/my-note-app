@@ -9,7 +9,7 @@ import NoteApp from './components/NoteApp'
 //   );
 // }
 const App = () => (
-  <div className="App">
+  <div className="main">
     <NoteApp />
   </div>
 )

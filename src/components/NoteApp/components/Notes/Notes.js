@@ -1,7 +1,8 @@
 import Note from "./components/Note"
+import "./Notes.css"
 
 const Notes = () =>(
-  <div>
+  <div className="notes">
     <Note />
     <Note />
   </div>
