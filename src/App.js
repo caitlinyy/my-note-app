@@ -11,6 +11,7 @@ import NoteApp from './components/NoteApp'
 const App = () => {
   <div className="App">
     <NoteApp />
+    this is note
   </div>
 }
 
