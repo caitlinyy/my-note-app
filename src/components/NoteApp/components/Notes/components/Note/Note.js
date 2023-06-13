@@ -1,6 +1,6 @@
 import DeleteNote from "./components/DeleteNote"
 import NoteContent from "./components/NoteContent"
-import "../../../css/note.css"
+import "../../css/note.css"
 
 const Note = () => (
   <div className="note">
