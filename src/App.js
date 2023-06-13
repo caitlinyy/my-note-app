@@ -8,11 +8,11 @@ import NoteApp from './components/NoteApp'
 //     </div>
 //   );
 // }
-const App = () => {
+const App = () => (
   <div className="App">
     <NoteApp />
-    this is note
   </div>
-}
+)
+
 
 export default App;

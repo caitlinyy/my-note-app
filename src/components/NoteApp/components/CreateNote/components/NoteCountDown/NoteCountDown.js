@@ -1,7 +1,7 @@
-const NoteCountDown = () => {
+const NoteCountDown = () => (
   <div>
-  100words Left
+    100words Left
   </div>
-}
+)
 
 export default NoteCountDown

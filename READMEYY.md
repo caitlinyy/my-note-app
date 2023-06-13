@@ -11,6 +11,7 @@
     - CreateNote (渲染 CreateNote 样式，布局和统筹所有 Note)
       - NoteInput  (渲染 NoteInput 样式细节样式)
       - NoteCountDown  (渲染 NoteCountDown 样式细节样式)
+      - ProgressBar  (渲染 ProgressBar 样式细节样式)
       - NoteSave (渲染 NoteSave 样式细节样式)
 
 (Global Components)

@@ -3,12 +3,11 @@ import Notes from "./components/Notes"
 import CreateNote from "./components/CreateNote"
 
 
-const NoteApp = () => {
+const NoteApp = () => (
   <div>
     <Header />
     <Notes />
     <CreateNote />
   </div>
-
-}
+)
 export default NoteApp
