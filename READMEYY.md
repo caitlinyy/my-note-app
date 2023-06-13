@@ -13,12 +13,13 @@
       - Note (Note 样式，布局和统筹所有Note)
         - NoteContent (渲染 NoteContent 样式细节样式)
         - DeleteNote (渲染 DeleteNote 样式细节样式)
+      - CreateNote (渲染 CreateNote 样式，布局和统筹)
+        - NoteInput  (渲染 NoteInput 样式细节样式)
+        - NoteCountDown  (渲染 NoteCountDown 样式细节样式)
+        - ProgressBar  (渲染 ProgressBar 样式细节样式)
+        - NoteSave (渲染 NoteSave 样式细节样式)
 
-    - CreateNote (渲染 CreateNote 样式，布局和统筹)
-      - NoteInput  (渲染 NoteInput 样式细节样式)
-      - NoteCountDown  (渲染 NoteCountDown 样式细节样式)
-      - ProgressBar  (渲染 ProgressBar 样式细节样式)
-      - NoteSave (渲染 NoteSave 样式细节样式)
+    
 
 (Global Components)
 
