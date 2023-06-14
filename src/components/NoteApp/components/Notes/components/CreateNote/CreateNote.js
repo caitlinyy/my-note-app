@@ -4,7 +4,7 @@ import NoteSave from "./components/NoteSave"
 import ProgressBar from "./components/ProgressBar/ProgressBar"
 
 import "../../css/note.css"
-import { useState } from "react"
+// import { useState } from "react"
 
 const CreateNote = ({textHandler,saveHandler,inputText}) => {
    //character limit
