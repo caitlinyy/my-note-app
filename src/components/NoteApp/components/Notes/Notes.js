@@ -1,4 +1,4 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import CreateNote from "./components/CreateNote"
 import Note from "./components/Note"
 import { v4 as uuid } from "uuid"
@@ -36,7 +36,23 @@ const Notes = () => {
     const filteredNotes = notes.filter((note) => note.id !== id);
     setNotes(filteredNotes)
   }
-  console.log('notes',notes)
+  // console.log('notes',notes)
+
+  //页面初次加载触发，找localStorage Notes 
+  useEffect(() => {
+    const data = JSON.parse(localStorage.getItem('Notes'))
+    if (Array.isArray(data) && data.length > 0) {
+      setNotes(data)
+    }
+    setLoading(false)
+  }, [])
+
+  //saving data to localStorage 每次触发都存新的notes 添加新的
+  useEffect(() => {
+    if (!loading) {
+      localStorage.setItem('Notes', JSON.stringify(notes))
+    }
+  }, [notes, loading])
 
   return (
     <div className="notes" >
@@ -49,10 +65,10 @@ const Notes = () => {
           deleteNote={deleteNote}
         />
       ))}
-      <CreateNote 
-      textHandler={textHandler} 
-      saveHandler={saveHandler} 
-      inputText={inputText} />
+      <CreateNote
+        textHandler={textHandler}
+        saveHandler={saveHandler}
+        inputText={inputText} />
     </div >
   )
 }
