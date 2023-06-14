@@ -1,6 +1,6 @@
-const NoteContent = ()=>(
+const NoteContent = ({note})=>(
   <div>
-    NoteContent
+    {note.text}
   </div>
 )
 

@@ -2,9 +2,13 @@ import DeleteForeverOutlined from '@mui/icons-material/DeleteForeverOutlined'
 
 import "./DeleteNote.css"
 
-const DeleteNote = () => (
+const DeleteNote = ({note,deleteNote}) => (
   <div>
-    <DeleteForeverOutlined className="note__delete" aria-hidden='true' />
+    <DeleteForeverOutlined 
+    onClick={()=>deleteNote(note.id)}
+    className="note__delete" 
+    aria-hidden='true' 
+     />
   </div>
 )
 

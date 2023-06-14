@@ -1,8 +1,14 @@
 import "./NoteInput.css"
 
-const NoteInput =()=>(
+const NoteInput =({textHandler,inputText})=>(
   <div>
-  <textarea cols="10" rows="5" value="" placeholder="Type..." maxLength="100">
+  <textarea 
+  onChange={textHandler}
+  value={inputText}
+  cols="10" 
+  rows="5" 
+  placeholder="Type..." 
+  maxLength="100">
     </textarea>
 </div>
 )

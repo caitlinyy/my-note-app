@@ -4,17 +4,23 @@ import NoteSave from "./components/NoteSave"
 import ProgressBar from "./components/ProgressBar/ProgressBar"
 
 import "../../css/note.css"
+import { useState } from "react"
 
-const CreateNote = () => (
-  <div className="note">
-    <NoteInput />
-    <div className="note__footer">
-    <NoteCountDown />
-    <NoteSave />
+const CreateNote = ({textHandler,saveHandler,inputText}) => {
+   //character limit
+   const charLimit = 100;
+   const charLeft = charLimit - inputText.length;
+
+  return (
+    <div className="note">
+      <NoteInput textHandler={textHandler} inputText={inputText} />
+      <div className="note__footer">
+        <NoteCountDown charLeft={charLeft} />
+        <NoteSave saveHandler={saveHandler} />
+      </div>
+      <ProgressBar  charLeft={charLeft}  />
     </div>
-    <ProgressBar />
-    
-  </div>
-)
+  )
+}
 
 export default CreateNote

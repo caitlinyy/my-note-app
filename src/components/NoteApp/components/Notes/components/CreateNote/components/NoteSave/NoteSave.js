@@ -1,8 +1,8 @@
 import './NoteSave.css'
 
-const NoteSave =()=>(
+const NoteSave =({saveHandler})=>(
   <div>
-    <button className='note__save'>Save</button>
+    <button className='note__save' onClick={saveHandler}>Save</button>
   </div>
 )
 
